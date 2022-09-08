@@ -1,0 +1,10 @@
+<div>
+  <h1 class="header">
+    Shopping List
+  </h1>
+  <input type="text" [(ngModel)]="newItem">
+  <button (click)="onAdd()">Add</button>
+  <ul>
+    <li *ngFor="let item of shoppingList">{{item}}</li>
+  </ul>
+</div>
